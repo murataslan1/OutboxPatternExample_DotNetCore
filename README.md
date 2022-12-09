@@ -12,5 +12,5 @@ The outbox processor also updates the status of each message in the outbox table
 
 This pattern ensures that messages are delivered reliably, even if there are temporary failures or network issues. It also helps to prevent messages from being lost or duplicated, and allows the application to track the status of each message.
 
-
+In systems that communicate asynchronously, possible data loss and inter-service data loss due to disconnection, error, and unexpected physical or software interruptions in the process (etc.) In order to avoid inconsistencies, it prevents the message from being lost, and it is a simple but highly effective pattern at critical points, which is activated to resend the message to the target point in case the connection is re-established after the negative situation(s).
 
